@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors...</title>
+    <style>
+        /*Element Selectors*/
+        div{
+            /*background-color: red;*/
+        }
+        /*Class Selectors*/
+        .sidd{
+            background-color: red;
+        }
+        /*ID Selectors*/
+        #green{
+            background-color: green;
+        }
+        /*Child Selectors*/
+        div >p{
+            color: black;
+            background-color: blue;
+        }
+        /*Descendant Selectors*/
+        div p{
+            color: black;
+            background-color: blue;
+        }
+       /*Universal Selectors*/ 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*Pseudo Selectors*/
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color:green
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidd">I am div.
+        <p>I am a para inside div.</p>
+    </div>
+    <div>It colors also red that's why we use class selectors.</div>
+    <div id="green">I am good.</div>
+    <div>
+        <span>
+            <p>I am not direct child of div seletors.But decendant selectors doing this job.</p>
+        </span>
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.Facebook2.com">Go to Facebook</a>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        /*.box:first-child{
+            background-color: aquamarine;
+        }*/
+       /*  .box::first-line{ /* only first line is yellow other wise defult
+            color: yellow;
+        }*/
+      /*  .Boxes *{
+            color: aqua;
+            border: 2px solid black;
+        }
+        p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+        }*/
+        /*.box:nth-child(odd){
+            background-color: violet;
+        }*/
+       /* .box:nth-last-child(1){
+            background-color: red;
+        }*/
+        .Boxes::before{
+            content: "I am insert at the top";
+            color: red;
+        }
+        .Boxes::after{
+            content: "I am insert at the last";
+            color: aqua;
+        }
+        ::selection{ /* select the output and you can see the output*/
+            background-color: blueviolet;
+            color: blue;
+        }
+        .box::first-letter{
+            color:lawngreen;
+            font-size: 45px;
+        }
+        input::placeholder{
+            color: orangered;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Boxes">
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos illum odio nisi soluta distinctio fuga aut est cum nulla qui, laudantium eaque ut repellendus ipsum placeat blanditiis accusamus laborum ipsam? khj ioh gugi iugh oigjh ihh </div>
+        <div class="box">i am a box</div>
+        <div data-color="primary" class="box">i am a box</div>
+        <input type="text" placeholder="Type your name">
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            /*Ekhane amr likha ta kintu overflow hoye jacche tai use korbo*/
+           /*overflow: scroll;/*likha ta ekhon kintu r overflow hobe na scrol bar chole asbe*/
+            overflow: auto;/* eta rakha sob theke best jodi overflow tobe scroll korbe na hole na*/
+            white-space: nowrap;
+            text-overflow:  ellipsis;/*likha r sese 3 ta dot asbe*/ 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+        Quae dolorem culpa consequuntur facilisa, voluptatum facere! Ipsam nulla<br>
+        explicabo cum vel cupiditate odio repudiandae quibusdam sed officia. Numquam,
+        cupiditate eaque?</div>
+</body>
+
+</html>

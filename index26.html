@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS multi color</title>
+    <style>
+        :root{
+            --primary-color:rgb(53, 6, 6);
+            --text-color:rgb(15, 11, 76);
+            --secoundary-color: rgb(163, 20, 84);
+        }
+        body{
+            background-color: var(--secoundary-color);
+        }
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-size: 24px;
+            
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding: 12px 0;
+            color: var(--text-color);
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul li a{
+            color: var(--secoundary-color);
+            text-decoration: none; /* link er niche line r thakbe na*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media query</title>
+</head>
+<style>
+    body{
+        background-color: yellow;
+    }
+    @media only screen and (max-width: 455px){
+        body{
+            background-color: turquoise;
+        }
+        .boxes{
+            flex-direction: column;
+        }
+
+    }
+    /* @media not\only mediatype and (expressions){
+        CSS-code;
+    }*/
+    .boxes{
+        display: flex;
+    }
+    .box{
+        width: 34px;
+        height: 34px;
+        background-color: blueviolet;
+        padding: 3px;
+        margin: 3px;
+    }
+   
+</style>
+<body>
+    <div>
+        Hey i am a div.
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

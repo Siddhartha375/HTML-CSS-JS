@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float and clear</title>
+    <style>
+        img{
+            float: left; /* it allow data to left of the img.*/
+        }
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(2){
+            background-color: aqua;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="img.jpg" width="300">
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia explicabo dignissimos quia impedit voluptatum dolore delectus repellendus alias error ipsa incidunt, id sapiente placeat ad molestias nostrum aspernatur ea architecto, modi, veniam illum qui saepe? Repellendus nulla eligendi ratione aperiam libero earum expedita minima, debitis, assumenda similique fuga sunt ea voluptates rem pariatur ut corporis odio facilis! Vero doloremque quisquam non dolor deserunt dicta corrupti laboriosam et libero eum laudantium cupiditate, deleniti quod adipisci obcaecati? Sequi architecto nobis cupiditate ipsa vel maxime? Doloremque voluptate nemo illum autem sunt eaque magni quasi temporibus tempore quibusdam quaerat perferendis fugiat, explicabo illo, rem nulla sequi deleniti. Ipsa, ea libero iure enim deserunt incidunt et nesciunt, ducimus voluptate officia molestiae id laborum hic assumenda sit? Error repellat minima fugiat laboriosam nesciunt? Quae voluptas eaque sapiente error unde debitis minima at repudiandae omnis quam. Alias amet rem magnam perspiciatis doloremque ipsam odio ea, modi repudiandae sint deleniti, rerum possimus nulla reiciendis. Possimus, ab quis? Officia, odio distinctio magnam, corrupti quidem ipsum obcaecati reprehenderit ullam iusto commodi est mollitia nostrum vitae architecto blanditiis numquam, inventore labore. Ea molestiae eligendi ducimus repellendus facere unde possimus in et totam, dicta dolorum autem eos, repellat nesciunt, ab veniam! Dignissimos nesciunt error ut eum, molestias suscipit blanditiis odio fugiat sapiente esse libero explicabo, alias autem veniam commodi perspiciatis maiores eius iste voluptate..</div>
+        <div class="card">card 2</div
+        <div class="card">card 3</div>
+    </div>
+</body>
+</html>
